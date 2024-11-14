@@ -10,5 +10,84 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
 
+}
+
+/** styling Main Body **/
+.mainBody{
+    width: 70%;
+    height: 80vh;
+    margin:auto;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #2F2F2F;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+}
+.left-panel{
+    width: 60%;
+    height: 78vh;
+    background-image: url(../images/Background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    margin: auto;
+    border-radius: 50px;
+    margin-left: 0.5%;
+    display: flex;
+ 
+    
+}
+.right-panel{
+    width: 40%;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-1{
+    width: 50%;
+    height: 10%;
+    margin-left: 7%;
+    margin-top: 5%;
+}
+.button-1 span{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+}
+.button-2{
+    width: 50%;
+    height: 10%;
+    margin-top: 5%;
+}
+.button-2 .signup{
+    margin-left: 30%;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 2%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    color: white;
+
+}
+.button-2 .joinus{
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+    margin-top: 2%;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
 }
