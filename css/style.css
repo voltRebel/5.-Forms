@@ -37,6 +37,7 @@ body{
     border-radius: 50px;
     margin-left: 0.5%;
     display: flex;
+    flex-direction: column;
  
     
 }
@@ -46,13 +47,11 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 }
 .button-1{
-    width: 50%;
+    width: 100%;
     height: 10%;
-    margin-left: 7%;
     margin-top: 5%;
 }
 .button-1 span{
@@ -60,14 +59,11 @@ body{
     font-size: 20px;
     font-weight: 500;
     line-height: 60px;
+    margin-left: 7%;
 }
-.button-2{
-    width: 50%;
-    height: 10%;
-    margin-top: 5%;
-}
-.button-2 .signup{
-    margin-left: 30%;
+
+.button-1 .signup{
+    margin-left: 35%;
     border: none;
     background-color: transparent;
     font-size: 15px;
@@ -79,7 +75,7 @@ body{
     color: white;
 
 }
-.button-2 .joinus{
+.button-1 .joinus{
     border: none;
     background-color: transparent;
     font-size: 15px;
@@ -90,4 +86,122 @@ body{
     border: 2px solid white;
     border-radius: 50px;
     color: white;
+}
+
+.section-3{
+    width: 100%;
+    height: 70%;
+
+}
+.section-4{
+    width: 100%;
+    height: 20%;
+    display: flex;    
+}
+.section-4 .user{
+    width: 10%;
+    height:  100%;
+    margin-left: 7%;
+}
+.section-4 .user i{
+    color: white;
+    font-size: 1.5rem;
+    border: 1px solid #23133E;
+    padding: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-radius: 50%;
+    background-color: #F52F50;
+}
+.section-4 .details{
+    color: white;
+    margin-top: 5px;
+}
+
+.section-4 .arrows{
+    width: 20%;
+    margin-left: 35%;
+}
+.section-4 .arrows #left,
+.section-4 .arrows #right{
+    font-size: 1rem;
+    color: white;
+    border: 1px solid white;
+    padding: 15px;
+    border-radius: 50px;
+    margin-right: 5%;
+    cursor: pointer;
+    transition: .5s;
+    background: transparent;
+}
+.section-4 .arrows #left:hover,
+.section-4 .arrows #right:hover{
+    background-color: #F52F50;
+    border: 1px solid #F52F50;
+    transition: .5s;
+}
+
+/** styling the right panel element **/
+.label{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.label h1{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 160px;
+    margin-left: 2%;
+    color: #2f2f2f;
+}
+.label #language{
+    height: 40px;
+    margin-right: 10%;
+    margin-top: 10%;
+    border-radius: 50px;
+    text-indent: 15px;
+}
+
+/** styling the form and its elements **/
+form{
+    width: 80%;
+    height: 80%;
+}
+form h1{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2.5rem;
+    color: #2F2F2F;
+}
+form h6{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.email{
+    position: relative;
+    height: 10%;
+    margin-top: 10%;
+
+}
+.email input{
+    width: 80%;
+    height: 50px;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+}
+.email label{
+    position: absolute;
+    top: 30%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
 }
