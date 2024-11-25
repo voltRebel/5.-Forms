@@ -188,20 +188,182 @@ form h6{
 }
 .email input{
     width: 80%;
-    height: 50px;
+    height: 85%;
     padding: 1px 0;
     color: #2F2F2F;
     outline: none;
     background: transparent;
     margin-left: 10%;
     border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
 }
 .email label{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 12%;
     color: #2F2F2F;
     font-size: 1rem;
     pointer-events: none;
     transition: .5s;
+}
+
+.password{
+    position: relative;
+    height: 10%;
+    margin-top: 2%;
+
+}
+.password input{
+    width: 80%;
+    height: 85%;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+.password label{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+/** adding focus effects **/
+.email input:focus ~ label,
+.email input:valid ~ label{
+    top: -7px;
+    left: 15%;
+    color: #F52F50;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.password input:focus ~ label,
+.password input:valid ~ label{
+    top: -7px;
+    left: 15%;
+    color: #F52F50;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/** more focus effects **/
+.email input:focus,
+.password input:focus{
+    border: 1px solid #F52F50;
+    transition: .5s;
+    color: #2F2F2F;
+}
+form label{
+    float: right;
+    margin-right: 10%;
+    color: #F52F50;
+    margin-top: 1%;
+}
+
+/** styling the or div **/
+.Or{
+    height: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.Or .one,
+.Or .two{
+    width: 15%;
+    height: 1px;
+    background-color: #2F2F2F;
+}
+.Or span{
+    margin: 0 15px;
+    color: #2F2F2F;
+}
+
+/** styling google button **/
+.google{
+    width: 80%;
+    height: 9%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    font-size: 0.8rem;
+    background: transparent;
+}
+#icon-google{
+    margin-left: 10px;
+    color: #DB4437;
+    font-size: 1.3rem;
+}
+
+/** styling the login button **/
+.login{
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    border: 1px solid #F52F50;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #F52F50;
+    color: white;
+    font-size: 0.8rem;
+}
+/** styling the option div **/
+.options{
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.options label{
+    color: #2F2F2F;
+    font-size: 0.8rem;
+}
+.options .signup{
+    color: #F52F50;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.options .signup:hover{
+    text-decoration: underline;
+    transition: .5s;
+}
+
+
+/** styling social media icons **/
+.socials{
+    display: flex;
+    width:80%;
+    height: 10%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.socials i{
+    color: #2F2F2F;
+    font-size: 1.2rem;
+    margin: 2%;
+    transition: .8s;
 }
