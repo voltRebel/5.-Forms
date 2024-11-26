@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px){
+    body{
+        background: url(../images/Background.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .mainBody{
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(255,255,255, 0.1);
+    }
+
+    .left-panel{
+        display: none;
+    }
+
+    .right-panel{
+        width: 100%;
+        height: inherit;
+    }
+
+    form{
+        width: 100%;
+        height: inherit;
+    }
+    .right-panel h1{
+        color: white;
+        font-size: 1.2rem;
+        margin-top: -3%;
+    }
+    #language{
+       background-color: transparent;
+       border: 1px solid white;
+       color: black;
+    }
+
+    .email input,
+    .password input{
+        border: 1px solid white;
+        color: white;
+    }
+    .email label,
+    .password label{
+        color: white;
+    }
+    .email input:focus,
+    .password input:focus{
+        border: 1px solid white;
+        color: white;
+    }
+    .email input:valid,
+    .password input:valid{
+        border-color: white;
+    }
+
+    form label{
+        color: white;
+    }
+
+    .Or .one,
+    .Or .two{
+       background-color: white;
+    }
+    .Or span{
+        color: white;
+    }
+    .google{
+        border: 1px solid white;
+        color: white;
+    }
+    #icon-google{
+        color: white;
+    }
+    .options label{
+        color: white;
+    }
+    .socials  i{
+        color: white;
+    }
+ 
+
+}
