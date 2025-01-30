@@ -2,65 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"       content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author"         content="Roach">
-    <meta name="keywords"       content="forms + login + signup + design">
-    <meta name="description"    content="UI/UX login form designed by Roach">
+    <meta name="author" content="Roach">
+    <meta name="keywords" content="forms + login + signup + design">
+    <meta name="description" content="UI/UX login form designed by Roach">
 
     <!-- Webpage icon -->
     <link rel="icon" href="images/logo.png">
 
     <!-- Linking external styling sheets -->
-    <link rel="stylesheet" href="css/style.css"         type="text/css">
-    <link rel="stylesheet" href="css/mediaQuery.css"    type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/mediaQuery.css" type="text/css">
 
     <!-- Linking font-awesome resource sheet -->
-    <link rel="stylesheet" href="fonts/css/all.css"     type="text/css">
+    <link rel="stylesheet" href="fonts/css/all.css" type="text/css">
 
     <!-- cdn for online font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css" integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Fire Bender </title>
+    <title>8pm | Signup</title>
 </head>
 <body>
-
     <div class="mainBody">
         <div class="left-panel">
-
             <div class="button-1">
-                <span>Fire Bender</span>
-                
-                <button type="button" class="signup">Sign Up</button>
-                <button type="button" class="joinus">Join Us</button>
-
+                <span>8PM</span>
+            
             </div>
 
             <div class="section-3">
-
             </div>
 
             <div class="section-4">
-                    <div class="user">
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                
-                    <div class="details">
-                        <span><strong>Roach.UI</strong> <br>  UI & Illustrations</span>
-                    </div>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            
+                <div class="details">
+                    <span><strong>AlSoft </strong> <br> UI & Illustrations</span>
+                </div>
 
-                    <div class="arrows">
-                        <i class="fa-solid fa-arrow-left fa-bounce"    id="left"></i>
-                        <i class="fa-solid fa-arrow-right fa-bounce"   id="right"></i>
-                    </div>
+                <div class="arrows">
+                    <i class="fa-solid fa-arrow-left fa-bounce" id="left"></i>
+                    <i class="fa-solid fa-arrow-right fa-bounce" id="right"></i>
+                </div>
             </div>
-
         </div>
 
         <div class="right-panel">
             <!-- adding form elements-->
-             <div class="label">
-                <h1>Fire Lord -  Zuko</h1>
+            <div class="label">
+                <h1>8pm - Roach</h1>
 
                 <select id="language" name="language">
                     <option value="en">English</option>
@@ -73,58 +66,135 @@
                     <option value="zh">Chinese</option>
                     <option value="ja">Japanese</option>
                 </select>
-             </div>
-
-             
-        <!-- adding form elements -->
-         <form>
-            <h1>Hi, Developers </h1>
-            <h6>welcome to Fire Bender</h6>
-
-            <!-- adding input elements -->
-             <div class="email">
-                <input type="email" required>
-                <label>Email</label>
-             </div>
-
-             <div class="password">
-                <input type="password" required>
-                <label>Password</label>
-             </div>
-
-             <label>Forgot Password</label>
-
-             <div class="Or">
-                <div class="one"></div>
-                <span>Or</span>
-                <div class="two"></div>
-             </div>
-
-             <button class="google">
-                Login with google
-                <i class="fa-brands fa-google" id="icon-google"></i>
-             </button>
-
-             <input type="button" type="submit" value="Login" class="login">
-
-             <!-- creating more options -->
-            <div class="options">
-                <label>Don't have an account? 
-                    <a href="#" class="signup">Sign Up</a>
-                </label>
             </div>
 
-          <div class="socials">
-            <i class="fa-brands fa-facebook"  id="icon-facebook"></i>
-            <i class="fa-brands fa-x-twitter" id="icon-twitter"></i>
-            <i class="fa-brands fa-linkedin"  id="icon-linkedin"></i>
-            <i class="fa-brands fa-instagram" id="icon-instagram"></i>
-          </div>
-            
-         </form>
+            <!-- Forms container -->
+            <div class="forms-container">
+                <!-- Login Form -->
+                <form class="login-form">
+                    <h1>Hi, Developers</h1>
+                    <h6>welcome to Fire Bender</h6>
 
+                    <div class="email">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="password">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <label class="forgot-password toggle-forgot">Forgot Password?</label>
+
+                    <div class="Or">
+                        <div class="one"></div>
+                        <span>Or</span>
+                        <div class="two"></div>
+                    </div>
+
+                    <button type="button" class="google">
+                        Login with Google
+                        <i class="fa-brands fa-google" id="icon-google"></i>
+                    </button>
+
+                    <button type="submit" class="login">Login</button>
+
+                    <div class="options">
+                        <label>Don't have an account? 
+                            <a href="#" class="toggle-form">Sign Up</a>
+                        </label>
+                    </div>
+
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook" id="icon-facebook"></i>
+                        <i class="fa-brands fa-x-twitter" id="icon-twitter"></i>
+                        <i class="fa-brands fa-linkedin" id="icon-linkedin"></i>
+                        <i class="fa-brands fa-instagram" id="icon-instagram"></i>
+                    </div>
+                </form>
+
+                <!-- Signup Form -->
+                <form class="signup-form">
+                    <h1>Create Account</h1>
+                    <h6>join the Fire Bender community</h6>
+
+                    <div class="name">
+                        <input type="text" required>
+                        <label>Full Name</label>
+                    </div>
+
+                    <div class="email">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <div class="password">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+
+                    <div class="confirm-password">
+                        <input type="password" required>
+                        <label>Confirm Password</label>
+                    </div>
+
+                    <div class="Or">
+                        <div class="one"></div>
+                        <span>Or</span>
+                        <div class="two"></div>
+                    </div>
+
+                    <button type="button" class="google">
+                        Sign up with Google
+                        <i class="fa-brands fa-google" id="icon-google"></i>
+                    </button>
+
+                    <button type="submit" class="signup-btn">Sign Up</button>
+
+                    <div class="options">
+                        <label>Already have an account? 
+                            <a href="#" class="toggle-form">Login</a>
+                        </label>
+                    </div>
+
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook" id="icon-facebook"></i>
+                        <i class="fa-brands fa-x-twitter" id="icon-twitter"></i>
+                        <i class="fa-brands fa-linkedin" id="icon-linkedin"></i>
+                        <i class="fa-brands fa-instagram" id="icon-instagram"></i>
+                    </div>
+                </form>
+
+                <!-- Forgot Password Form -->
+                <form class="forgot-form">
+                    <h1>Reset Password</h1>
+                    <h6>we'll send you reset instructions</h6>
+
+                    <div class="email">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+
+                    <button type="submit" class="reset-btn">Send Reset Link</button>
+
+                    <div class="options">
+                        <label>Remember your password? 
+                            <a href="#" class="toggle-login">Login</a>
+                        </label>
+                    </div>
+
+                    <div class="socials">
+                        <i class="fa-brands fa-facebook" id="icon-facebook"></i>
+                        <i class="fa-brands fa-x-twitter" id="icon-twitter"></i>
+                        <i class="fa-brands fa-linkedin" id="icon-linkedin"></i>
+                        <i class="fa-brands fa-instagram" id="icon-instagram"></i>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     
+    <script src="js/script.js"></script>
 </body>
 </html>

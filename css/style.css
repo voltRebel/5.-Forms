@@ -6,7 +6,7 @@
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(../images/Background-1.png);
+    background-image: url(../images/8pm-3.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@ body{
 .left-panel{
     width: 60%;
     height: 78vh;
-    background-image: url(../images/Background.png);
+    background-image: url(../images/8pm-3\ -\ Copy.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -153,7 +153,7 @@ body{
     font-weight: 500;
     line-height: 160px;
     margin-left: 2%;
-    color: #2f2f2f;
+    color: #004D55;
 }
 .label #language{
     height: 40px;
@@ -172,7 +172,7 @@ form h1{
     text-align: center;
     margin-top: 15%;
     font-size: 2.5rem;
-    color: #2F2F2F;
+    color: #004D55;
 }
 form h6{
     text-align: center;
@@ -240,7 +240,7 @@ form h6{
 .email input:valid ~ label{
     top: -7px;
     left: 15%;
-    color: #F52F50;
+    color: #004D55;
     font-size: .8rem;
     transition: .5s;
     background-color: whitesmoke;
@@ -251,7 +251,7 @@ form h6{
 .password input:valid ~ label{
     top: -7px;
     left: 15%;
-    color: #F52F50;
+    color: #004D55;
     font-size: .8rem;
     transition: .5s;
     background-color: whitesmoke;
@@ -262,14 +262,14 @@ form h6{
 /** more focus effects **/
 .email input:focus,
 .password input:focus{
-    border: 1px solid #F52F50;
+    border: 1px solid #004D55;
     transition: .5s;
     color: #2F2F2F;
 }
 form label{
     float: right;
     margin-right: 10%;
-    color: #F52F50;
+    color: #004D55;
     margin-top: 1%;
 }
 
@@ -319,10 +319,10 @@ form label{
     width: 80%;
     height: 9%;
     border-radius: 10px;
-    border: 1px solid #F52F50;
+    border: 1px solid #004D55;
     margin-left: 10%;
     margin-top: 5%;
-    background-color: #F52F50;
+    background-color: #004D55;
     color: white;
     font-size: 0.8rem;
 }
@@ -340,7 +340,7 @@ form label{
     font-size: 0.8rem;
 }
 .options .signup{
-    color: #F52F50;
+    color: #004D55;
     font-size: 0.8rem;
     text-decoration: none;
     cursor: pointer;
@@ -365,5 +365,506 @@ form label{
     color: #2F2F2F;
     font-size: 1.2rem;
     margin: 2%;
+    transition: .8s;
+}
+
+/* Forms Container Styles */
+.forms-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.login-form,
+.signup-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.login-form {
+    left: 0;
+    transform: translateX(0);
+}
+
+.signup-form {
+    left: 0;
+    transform: translateX(100%);
+}
+
+.login-form.slide-out {
+    transform: translateX(-100%);
+}
+
+.signup-form.slide-in {
+    transform: translateX(0);
+}
+
+/* Signup Form Specific Styles */
+.signup-form .name,
+.signup-form .email,
+.signup-form .password,
+.signup-form .confirm-password {
+    position: relative;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.signup-form .name {
+    margin-top: 10%;
+}
+
+.signup-form h1 {
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2.5rem;
+    color: #004D55;
+}
+
+.signup-form h6 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.signup-form .Or {
+    height: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+
+.signup-form .google {
+    width: 80%;
+    height: 9%;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    font-size: 0.8rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+.signup-form .signup-btn {
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    border: 1px solid #004D55;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #004D55;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.signup-form .options {
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+
+.signup-form .socials {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+/* Input field styles for signup form */
+.signup-form .name input,
+.signup-form .email input,
+.signup-form .password input,
+.signup-form .confirm-password input {
+    width: 80%;
+    height: 85%;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+.signup-form .name label,
+.signup-form .email label,
+.signup-form .password label,
+.signup-form .confirm-password label {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.signup-form .name input:focus ~ label,
+.signup-form .name input:valid ~ label,
+.signup-form .email input:focus ~ label,
+.signup-form .email input:valid ~ label,
+.signup-form .password input:focus ~ label,
+.signup-form .password input:valid ~ label,
+.signup-form .confirm-password input:focus ~ label,
+.signup-form .confirm-password input:valid ~ label {
+    top: -7px;
+    left: 15%;
+    color: #004D55;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.signup-form .name input:focus,
+.signup-form .email input:focus,
+.signup-form .password input:focus,
+.signup-form .confirm-password input:focus {
+    border: 1px solid #004D55;
+    transition: .5s;
+}
+
+/* Forgot Password Form Styles */
+.forgot-form {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transform: translateX(100%);
+    transition: transform 0.6s ease-in-out;
+}
+
+.forgot-form.slide-in {
+    transform: translateX(0);
+}
+
+.forgot-form h1 {
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2.5rem;
+    color: #004D55;
+}
+
+.forgot-form h6 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.forgot-form .email {
+    position: relative;
+    height: 10%;
+    margin-top: 10%;
+}
+
+.forgot-form .email input {
+    width: 80%;
+    height: 85%;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+.forgot-form .email label {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.forgot-form .email input:focus ~ label,
+.forgot-form .email input:valid ~ label {
+    top: -7px;
+    left: 15%;
+    color: #004D55;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.forgot-form .email input:focus {
+    border: 1px solid #004D55;
+    transition: .5s;
+}
+
+.forgot-form .reset-btn {
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    border: 1px solid #004D55;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #004D55;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.forgot-form .reset-btn:hover {
+    background-color: white;
+    color: #004D55;
+    border: 1px solid #004D55;
+    transition: .5s;
+}
+
+.forgot-form .options {
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.forgot-form .options label {
+    color: #2F2F2F;
+    font-size: 0.8rem;
+}
+
+.forgot-form .options .toggle-login {
+    color: #004D55;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.forgot-form .options .toggle-login:hover {
+    text-decoration: underline;
+}
+
+.forgot-form .socials {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.forgot-form .socials i {
+    color: #2F2F2F;
+    font-size: 1.2rem;
+    margin: 2%;
+    transition: .8s;
+}
+
+.forgot-form .socials i:hover {
+    color: #004D55;
+    transition: .8s;
+}
+
+/* Update cursor style for toggles */
+.toggle-forgot,
+.toggle-form,
+.toggle-login {
+    cursor: pointer;
+}
+
+/* New Password Form Styles */
+.new-password-form {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.new-password-form h1 {
+    text-align: center;
+    margin-top: 15%;
+    font-size: 2.5rem;
+    color: #004D55;
+}
+
+.new-password-form h6 {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.new-password-form .password,
+.new-password-form .confirm-password {
+    position: relative;
+    height: 10%;
+    margin-top: 2%;
+}
+
+.new-password-form .password {
+    margin-top: 10%;
+}
+
+.new-password-form .password input,
+.new-password-form .confirm-password input {
+    width: 80%;
+    height: 85%;
+    padding: 1px 0;
+    color: #2F2F2F;
+    outline: none;
+    background: transparent;
+    margin-left: 10%;
+    border: 1px solid #2F2F2F;
+    border-radius: 10px;
+    text-indent: 10px;
+}
+
+.new-password-form .password label,
+.new-password-form .confirm-password label {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: #2F2F2F;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.new-password-form .password input:focus ~ label,
+.new-password-form .password input:valid ~ label,
+.new-password-form .confirm-password input:focus ~ label,
+.new-password-form .confirm-password input:valid ~ label {
+    top: -7px;
+    left: 15%;
+    color: #004D55;
+    font-size: .8rem;
+    transition: .5s;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.new-password-form .password input:focus,
+.new-password-form .confirm-password input:focus {
+    border: 1px solid #004D55;
+    transition: .5s;
+}
+
+.new-password-form .reset-btn {
+    width: 80%;
+    height: 9%;
+    border-radius: 10px;
+    border: 1px solid #004D55;
+    margin-left: 10%;
+    margin-top: 5%;
+    background-color: #004D55;
+    color: white;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.new-password-form .reset-btn:hover {
+    background-color: white;
+    color: #004D55;
+    border: 1px solid #004D55;
+    transition: .5s;
+}
+
+.new-password-form .password-requirements {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+}
+
+.new-password-form .password-requirements h6 {
+    color: #2F2F2F;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.new-password-form .password-requirements ul {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.new-password-form .password-requirements ul li {
+    color: #666;
+    font-size: 0.8rem;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.new-password-form .password-requirements ul li:before {
+    content: "•";
+    color: #004D55;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.new-password-form .options {
+    width: 80%;
+    height: 5%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.new-password-form .options label {
+    color: #2F2F2F;
+    font-size: 0.8rem;
+}
+
+.new-password-form .options .toggle-login {
+    color: #004D55;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.new-password-form .options .toggle-login:hover {
+    text-decoration: underline;
+}
+
+.new-password-form .socials {
+    display: flex;
+    width: 80%;
+    height: 10%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.new-password-form .socials i {
+    color: #2F2F2F;
+    font-size: 1.2rem;
+    margin: 2%;
+    transition: .8s;
+}
+
+.new-password-form .socials i:hover {
+    color: #004D55;
     transition: .8s;
 }
